@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mosaic Example
-  m_Shader: {fileID: -6465566751694194690, guid: 06b71d034e24153458d5e11b4030ff63,
+  m_Name: Flowmap Example
+  m_Shader: {fileID: -6465566751694194690, guid: 350d138789c77784a82aad38ee32cb4f,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -20,8 +20,16 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_FD943A6F:
-        m_Texture: {fileID: 2800000, guid: a3d266f838008434cb9a344351883c3d, type: 3}
+    - Texture2D_3E350F19:
+        m_Texture: {fileID: 2800000, guid: 8b91ed11977ab17408db1df85f533870, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_4B2DE0A2:
+        m_Texture: {fileID: 2800000, guid: edf3047613ead6d4591ac77ee1b52735, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_EFDBBF32:
+        m_Texture: {fileID: 2800000, guid: 97300ab7c8452d247b47505009d9ca41, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -34,6 +42,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FlowUV_5520A99F_Texture2D177B774_181193692:
+        m_Texture: {fileID: 2800000, guid: ada64f001875c304eb6ca5a0b8599e8b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -53,7 +65,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_91B322F7: 16
+    - Vector1_155C7BF8: 0.9
+    - Vector1_15D7B91A: 1.5
+    - Vector1_5552FAC8: 0.15
+    - Vector1_98E380CB: 0.15
+    - Vector1_9BB81A8B: 0
+    - Vector1_9E76B376: 0
+    - Vector1_B99A3C0B: 0
+    - Vector1_CAA99DC3: -0.5
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -76,11 +95,13 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - Color_1B0C035C: {r: 0.13510147, g: 0.6585466, b: 0.8679245, a: 0}
+    - Vector2_A635035A: {r: 2, g: 2, b: 0, a: 0}
     - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
---- !u!114 &1435154518158902326
+--- !u!114 &3715066020135375664
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
