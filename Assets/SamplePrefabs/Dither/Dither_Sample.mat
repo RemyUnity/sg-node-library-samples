@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Dither_Sample
+  m_Shader: {fileID: -6465566751694194690, guid: 6d0fdb6d1c8d74e9cba678ff92c184d3,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4C175752:
+        m_Texture: {fileID: 2800000, guid: 5d78fd5e74ff0f04a8b6e5e32427f1ea, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_7545DE4B:
+        m_Texture: {fileID: 2800000, guid: 8ae11a5d3eb271a4bb53a6410cb75c72, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8950C777:
+        m_Texture: {fileID: 2800000, guid: 174ccc0b3972b8044b70d6877f13d61b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_ADEB617C:
+        m_Texture: {fileID: 2800000, guid: 1825133aaee2aa542bfba8334b1e92f7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_DE8CE6F5:
+        m_Texture: {fileID: 2800000, guid: df61ba9c0d8f03846ae5b7b5373023b0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CustomDither_EC43FC32_Texture2DF1012B1E_2286519439:
+        m_Texture: {fileID: 2800000, guid: 821397573b1d04ede944dd6503d77a9f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CustomDither_F4EBA6D6_Texture2DF1012B1E_2286519439:
+        m_Texture: {fileID: 2800000, guid: 821397573b1d04ede944dd6503d77a9f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_5F8BB8A3: 0.63
+    - Vector1_E5E48891: 0
+    m_Colors: []
