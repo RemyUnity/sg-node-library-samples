@@ -64,11 +64,15 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_732811F1_Out_0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_155C7BF8: 0.7
-    - Vector1_15D7B91A: 1.51
+    - Vector1_15D7B91A: 1.5
     - Vector1_5552FAC8: 0.25
-    - Vector1_98E380CB: 0.15
+    - Vector1_98E380CB: 0.39
     - Vector1_9BB81A8B: 0
     - Vector1_9E76B376: 0
     - Vector1_B99A3C0B: 0
