@@ -40,11 +40,19 @@ Material:
         m_Texture: {fileID: 2800000, guid: df61ba9c0d8f03846ae5b7b5373023b0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _CustomDither_45D00D0E_Texture2DF1012B1E_2286519439:
+        m_Texture: {fileID: 2800000, guid: 821397573b1d04ede944dd6503d77a9f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _CustomDither_EC43FC32_Texture2DF1012B1E_2286519439:
         m_Texture: {fileID: 2800000, guid: 821397573b1d04ede944dd6503d77a9f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CustomDither_F4EBA6D6_Texture2DF1012B1E_2286519439:
+        m_Texture: {fileID: 2800000, guid: 821397573b1d04ede944dd6503d77a9f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PosterizedDither_E6093C61_Texture2DF1012B1E_2286519439:
         m_Texture: {fileID: 2800000, guid: 821397573b1d04ede944dd6503d77a9f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
