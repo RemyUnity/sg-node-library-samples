@@ -1,6 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-2426680116410241158
+--- !u!114 &-4670255973841233989
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1e95aa6d658d694785bfde37c857fff, type: 3}
+  m_Name: RecorderClip
+  m_EditorClassIdentifier: 
+  settings: {fileID: -2514934516672011490}
+--- !u!114 &-2514934516672011490
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13,12 +26,12 @@ MonoBehaviour:
   m_Name: MovieRecorderSettings
   m_EditorClassIdentifier: 
   enabled: 1
-  take: 13
+  take: 1
   captureEveryNthFrame: 1
   fileNameGenerator:
     m_Path:
-      m_Root: 5
-      m_Leaf: C:/Users/GSF/Desktop/Work Temp/Unity/Hackweek
+      m_Root: 0
+      m_Leaf: Recordings
       m_ForceAssetFolder: 0
     m_FileName: movie
   outputFormat: 0
@@ -31,7 +44,7 @@ MonoBehaviour:
       m_OutputResolution:
         m_CustomWidth: 1024
         m_CustomHeight: 1024
-        imageHeight: 1080
+        imageHeight: 0
         maxSupportedHeight: 2160
         m_AspectRatio:
           m_CustomAspectX: 1
@@ -43,8 +56,8 @@ MonoBehaviour:
       m_OutputResolution:
         m_CustomWidth: 1024
         m_CustomHeight: 1024
-        imageHeight: 1080
-        maxSupportedHeight: 2160
+        imageHeight: 0
+        maxSupportedHeight: 4320
         m_AspectRatio:
           m_CustomAspectX: 1
           m_CustomAspectY: 1
@@ -85,7 +98,7 @@ MonoBehaviour:
       colorSpace: 0
       flipFinalOutput: 0
   m_AudioInputSettings:
-    preserveAudio: 0
+    preserveAudio: 1
 --- !u!114 &-906084439848706543
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -172,8 +185,8 @@ MonoBehaviour:
   - m_Version: 1
     m_Start: 0
     m_ClipIn: 0
-    m_Asset: {fileID: 4917753021057574556}
-    m_Duration: 70
+    m_Asset: {fileID: -4670255973841233989}
+    m_Duration: 60
     m_TimeScale: 1
     m_ParentTrack: {fileID: 1483761850938230580}
     m_EaseInDuration: 0
@@ -240,16 +253,3 @@ MonoBehaviour:
     m_DisplayName: RecorderClip
   m_Markers:
     m_Objects: []
---- !u!114 &4917753021057574556
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1e95aa6d658d694785bfde37c857fff, type: 3}
-  m_Name: RecorderClip
-  m_EditorClassIdentifier: 
-  settings: {fileID: -2426680116410241158}

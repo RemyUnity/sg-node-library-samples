@@ -1067,7 +1067,7 @@
             "typeInfo": {
                 "fullName": "UnityEditor.Graphing.Edge"
             },
-            "JSONnodeData": "{\n    \"m_OutputSlot\": {\n        \"m_SlotId\": 3,\n        \"m_NodeGUIDSerialized\": \"90d72249-ebf6-47a6-bcce-c349c957a0b6\"\n    },\n    \"m_InputSlot\": {\n        \"m_SlotId\": 1,\n        \"m_NodeGUIDSerialized\": \"9a8d88a8-9579-45d0-b689-878f2ce7bb88\"\n    }\n}"
+            "JSONnodeData": "{\n    \"m_OutputSlot\": {\n        \"m_SlotId\": 0,\n        \"m_NodeGUIDSerialized\": \"39d73aa7-2fb7-496d-b168-8603c5c9ebf0\"\n    },\n    \"m_InputSlot\": {\n        \"m_SlotId\": 1,\n        \"m_NodeGUIDSerialized\": \"9a8d88a8-9579-45d0-b689-878f2ce7bb88\"\n    }\n}"
         }
     ],
     "m_PreviewData": {

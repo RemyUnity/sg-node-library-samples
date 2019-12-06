@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_FlowingWater
+  m_Name: UberShader_Mat
   m_Shader: {fileID: -6465566751694194690, guid: 13d2a1d3fcbccba4fb2d8b31caebdba2,
     type: 3}
   m_ShaderKeywords: 
@@ -24,10 +24,30 @@ Material:
         m_Texture: {fileID: 2800000, guid: 97300ab7c8452d247b47505009d9ca41, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_2EE2A4FB_Texture_1:
-        m_Texture: {fileID: 0}
+    - Texture2D_980AB0F:
+        m_Texture: {fileID: 2800000, guid: 8b91ed11977ab17408db1df85f533870, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_9F9E0D14:
+        m_Texture: {fileID: 2800000, guid: df61ba9c0d8f03846ae5b7b5373023b0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_D54D4E9D:
+        m_Texture: {fileID: 2800000, guid: 1825133aaee2aa542bfba8334b1e92f7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_E72E8465:
+        m_Texture: {fileID: 2800000, guid: 5d78fd5e74ff0f04a8b6e5e32427f1ea, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_12B42701: 1
-    m_Colors: []
+    - Vector1_12B42701: 0.1
+    - Vector1_4734F710: 3
+    - Vector1_706EE1DD: 0.228
+    - Vector1_E0050C8E: 0.5
+    - Vector1_E3F53FDB: 0.5
+    - Vector1_EFE5B026: 2
+    m_Colors:
+    - Color_D0441EF8: {r: 0.05873977, g: 0.12193436, b: 0.3773585, a: 0}
+    - Color_E0F309B4: {r: 0.35933605, g: 0.57762015, b: 0.8018868, a: 0}
+    - Vector4_A7975496: {r: 0.87, g: 1.22, b: 0, a: 1}
