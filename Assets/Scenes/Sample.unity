@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 89458adbf9ff6ed4b827c4a8b6644f3c,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -221,6 +221,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 138745778}
     m_Modifications:
+    - target: {fileID: 2200634683304036894, guid: a0c229b7378928b41a0346fbff8c0130,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6156188099594993752, guid: a0c229b7378928b41a0346fbff8c0130,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6710780836702344016, guid: a0c229b7378928b41a0346fbff8c0130,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -429,6 +439,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 138745778}
     m_Modifications:
+    - target: {fileID: 4641932898256320839, guid: 768b517867ddf4932baf01c8e6202624,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4805675417919581851, guid: 768b517867ddf4932baf01c8e6202624,
         type: 3}
       propertyPath: m_Name
@@ -493,7 +508,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 768b517867ddf4932baf01c8e6202624, type: 3}
 --- !u!4 &543364172 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8300071298936316832, guid: 768b517867ddf4932baf01c8e6202624,
+  m_CorrespondingSourceObject: {fileID: 4641932898256320839, guid: 768b517867ddf4932baf01c8e6202624,
     type: 3}
   m_PrefabInstance: {fileID: 543364171}
   m_PrefabAsset: {fileID: 0}
@@ -581,8 +596,8 @@ Camera:
   m_GameObject: {fileID: 948482936}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.177, g: 0.1582616, b: 0.106731, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
