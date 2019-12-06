@@ -6,6 +6,7 @@ public class AutoPlaceSamples : MonoBehaviour
 {
     public float sampleDisplayTime = 5;
     public float betweenSampleTime = 2;
+	public GameObject ground;
     private int childCount = 5;
     float betweenChildAngle = 22.5f;
 
@@ -39,7 +40,9 @@ public class AutoPlaceSamples : MonoBehaviour
         {
             var f = timer / betweenSampleTime;
             f = 0.5f - Mathf.Cos(f * Mathf.PI)*0.5f;
-            transform.eulerAngles = lastEulerRef + Vector3.up * betweenChildAngle * f;
+			Vector3 eulerAngles = lastEulerRef + Vector3.up * betweenChildAngle * f;
+            transform.eulerAngles = eulerAngles;
+            ground.transform.eulerAngles = eulerAngles;
         }
     }
 
