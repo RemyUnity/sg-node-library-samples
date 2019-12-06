@@ -185,6 +185,16 @@ PrefabInstance:
       propertyPath: m_Text
       value: Dither
       objectReference: {fileID: 0}
+    - target: {fileID: 2963605169228992830, guid: 9422ed8e1ed3b48e081a6a6585b5ac36,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6279
+      objectReference: {fileID: 0}
+    - target: {fileID: 2963605169228992830, guid: 9422ed8e1ed3b48e081a6a6585b5ac36,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.3919
+      objectReference: {fileID: 0}
     - target: {fileID: 6710780836702344016, guid: 9422ed8e1ed3b48e081a6a6585b5ac36,
         type: 3}
       propertyPath: m_LocalPosition.x
