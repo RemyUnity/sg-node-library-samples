@@ -4,11 +4,43 @@ using UnityEngine;
 
 public class AutoPlaceSamples : MonoBehaviour
 {
-    public float rotationSpeed = 5;
+    public float sampleDisplayTime = 5;
+    public float betweenSampleTime = 2;
+    private int childCount = 5;
+    float betweenChildAngle = 22.5f;
+
+    private void Start()
+    {
+        childCount = transform.childCount;
+        betweenChildAngle = 360f / childCount;
+    }
+
+    float timer = 0f;
+    bool stopPhase = true;
+    Vector3 lastEulerRef = Vector3.zero;
+    int lastChild = 0;
 
     void Update()
     {
-        transform.eulerAngles = Vector3.up * Mathf.Deg2Rad * rotationSpeed * Time.time;
+        timer += Time.deltaTime;
+
+        if ( timer > (stopPhase? sampleDisplayTime : betweenSampleTime ) )
+        {
+            timer -= stopPhase ? sampleDisplayTime : betweenSampleTime;
+            stopPhase = !stopPhase;
+            if (stopPhase)
+            {
+                lastChild = (lastChild + 1) % childCount;
+                lastEulerRef = Vector3.up * lastChild * betweenChildAngle;
+            }
+        }
+
+        if (!stopPhase)
+        {
+            var f = timer / betweenSampleTime;
+            f = 0.5f - Mathf.Cos(f * Mathf.PI)*0.5f;
+            transform.eulerAngles = lastEulerRef + Vector3.up * betweenChildAngle * f;
+        }
     }
 
 
