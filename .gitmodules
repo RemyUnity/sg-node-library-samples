@@ -1,3 +1,3 @@
-[submodule "Packages\\com.unity.shadergraph.node-library"]
-	path = Packages\\com.unity.shadergraph.node-library
+[submodule "Packages/com.unity.shadergraph.node-library"]
+	path = Packages/com.unity.shadergraph.node-library
 	url = git@github.cds.internal.unity3d.com:remym/gfx-hw19-sg-node-library.git
