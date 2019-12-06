@@ -275,10 +275,10 @@ Material:
     m_Colors:
     - Vector2_244F553B: {r: 1, g: 0, b: 0, a: 0}
     - Vector2_392AFE25: {r: 0, g: 0, b: 0, a: 0}
-    - Vector2_3A006E4A: {r: -0.01, g: 0, b: 0, a: 0}
+    - Vector2_3A006E4A: {r: -0.02, g: 0, b: 0, a: 0}
     - Vector2_52801437: {r: 0, g: 0, b: 0, a: 0}
-    - Vector2_89C623A5: {r: 0.01, g: -0.01, b: 0, a: 0}
-    - Vector2_8F769DBA: {r: 0.05, g: 0.01, b: 0, a: 0}
+    - Vector2_89C623A5: {r: 0.02, g: 0, b: 0, a: 0}
+    - Vector2_8F769DBA: {r: 0, g: 0.02, b: 0, a: 0}
     - Vector2_C3F490F9: {r: 0.01, g: 0, b: 0, a: 0}
     - Vector2_F1699203: {r: -1, g: 0, b: 0, a: 0}
     - Vector2_FB56F2F1: {r: 0, g: 1, b: 0, a: 0}
