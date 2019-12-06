@@ -787,7 +787,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1635696843
 Animator:
   serializedVersion: 3
@@ -1299,6 +1299,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: bfe18d8e94a917a45ac8f49a2a13a33d, type: 2}
+    - target: {fileID: 1543517562740194985, guid: cbd45cd21eab3924dad58f1a67b5c03d,
+        type: 3}
+      propertyPath: m_Text
+      value: "\xDCber Shader"
+      objectReference: {fileID: 0}
     - target: {fileID: 1656874508899385039, guid: cbd45cd21eab3924dad58f1a67b5c03d,
         type: 3}
       propertyPath: m_LocalPosition.x
