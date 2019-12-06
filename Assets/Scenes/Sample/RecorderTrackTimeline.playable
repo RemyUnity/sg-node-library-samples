@@ -26,12 +26,12 @@ MonoBehaviour:
   m_Name: MovieRecorderSettings
   m_EditorClassIdentifier: 
   enabled: 1
-  take: 1
+  take: 6
   captureEveryNthFrame: 1
   fileNameGenerator:
     m_Path:
-      m_Root: 0
-      m_Leaf: Recordings
+      m_Root: 5
+      m_Leaf: C:/Users/GSF/Desktop/Work Temp/Unity/Hackweek
       m_ForceAssetFolder: 0
     m_FileName: movie
   outputFormat: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
       m_OutputResolution:
         m_CustomWidth: 1024
         m_CustomHeight: 1024
-        imageHeight: 0
+        imageHeight: 1080
         maxSupportedHeight: 2160
         m_AspectRatio:
           m_CustomAspectX: 1
@@ -98,7 +98,7 @@ MonoBehaviour:
       colorSpace: 0
       flipFinalOutput: 0
   m_AudioInputSettings:
-    preserveAudio: 1
+    preserveAudio: 0
 --- !u!114 &-906084439848706543
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -186,7 +186,7 @@ MonoBehaviour:
     m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: -4670255973841233989}
-    m_Duration: 60
+    m_Duration: 70
     m_TimeScale: 1
     m_ParentTrack: {fileID: 1483761850938230580}
     m_EaseInDuration: 0
