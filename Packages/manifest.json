@@ -5,6 +5,7 @@
     "com.unity.recorder": "2.0.3-preview.1",
     "com.unity.render-pipelines.universal": "7.1.6",
     "com.unity.ugui": "1.0.0",
+    "remy-unity.sg-node-library": "https://github.com/RemyUnity/sg-node-library.git",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
@@ -36,5 +37,11 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
+  },
+  "lock": {
+    "remy-unity.sg-node-library": {
+      "revision": "HEAD",
+      "hash": "31a1bdaf02778f2d6b79bb2da00e372eaa5fa2ce"
+    }
   }
 }
