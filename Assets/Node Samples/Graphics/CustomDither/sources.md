@@ -1,0 +1,1 @@
+Blue noise from http://momentsingraphics.de/BlueNoise.html
