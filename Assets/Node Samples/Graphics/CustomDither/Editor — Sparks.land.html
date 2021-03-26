@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://sparks.localhost/editor/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, embed[type="application/pdf"] {
+    filter: null !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: #c2beb9;
+   --darkreader-neutral-text: #2a2e2f;
+   --darkreader-selection-background: #3e6595;
+   --darkreader-selection-text: #dcdad7;
+}</style><script class="darkreader darkreader--proxy">(function injectProxy() {
+        document.dispatchEvent(
+            new CustomEvent("__darkreader__inlineScriptsAllowed")
+        );
+        const addRuleDescriptor = Object.getOwnPropertyDescriptor(
+            CSSStyleSheet.prototype,
+            "addRule"
+        );
+        const insertRuleDescriptor = Object.getOwnPropertyDescriptor(
+            CSSStyleSheet.prototype,
+            "insertRule"
+        );
+        const deleteRuleDescriptor = Object.getOwnPropertyDescriptor(
+            CSSStyleSheet.prototype,
+            "deleteRule"
+        );
+        const removeRuleDescriptor = Object.getOwnPropertyDescriptor(
+            CSSStyleSheet.prototype,
+            "removeRule"
+        );
+        const cleanUp = () => {
+            Object.defineProperty(
+                CSSStyleSheet.prototype,
+                "addRule",
+                addRuleDescriptor
+            );
+            Object.defineProperty(
+                CSSStyleSheet.prototype,
+                "insertRule",
+                insertRuleDescriptor
+            );
+            Object.defineProperty(
+                CSSStyleSheet.prototype,
+                "deleteRule",
+                deleteRuleDescriptor
+            );
+            Object.defineProperty(
+                CSSStyleSheet.prototype,
+                "removeRule",
+                removeRuleDescriptor
+            );
+            document.removeEventListener("__darkreader__cleanUp", cleanUp);
+            document.removeEventListener(
+                "__darkreader__addUndefinedResolver",
+                addUndefinedResolver
+            );
+        };
+        const addUndefinedResolver = (e) => {
+            customElements.whenDefined(e.detail.tag).then(() => {
+                document.dispatchEvent(
+                    new CustomEvent("__darkreader__isDefined", {
+                        detail: {tag: e.detail.tag}
+                    })
+                );
+            });
+        };
+        document.addEventListener("__darkreader__cleanUp", cleanUp);
+        document.addEventListener(
+            "__darkreader__addUndefinedResolver",
+            addUndefinedResolver
+        );
+        const updateSheetEvent = new Event("__darkreader__updateSheet");
+        function proxyAddRule(selector, style, index) {
+            addRuleDescriptor.value.call(this, selector, style, index);
+            if (
+                this.ownerNode &&
+                !this.ownerNode.classList.contains("darkreader")
+            ) {
+                this.ownerNode.dispatchEvent(updateSheetEvent);
+            }
+            return -1;
+        }
+        function proxyInsertRule(rule, index) {
+            const returnValue = insertRuleDescriptor.value.call(
+                this,
+                rule,
+                index
+            );
+            if (
+                this.ownerNode &&
+                !this.ownerNode.classList.contains("darkreader")
+            ) {
+                this.ownerNode.dispatchEvent(updateSheetEvent);
+            }
+            return returnValue;
+        }
+        function proxyDeleteRule(index) {
+            deleteRuleDescriptor.value.call(this, index);
+            if (
+                this.ownerNode &&
+                !this.ownerNode.classList.contains("darkreader")
+            ) {
+                this.ownerNode.dispatchEvent(updateSheetEvent);
+            }
+        }
+        function proxyRemoveRule(index) {
+            removeRuleDescriptor.value.call(this, index);
+            if (
+                this.ownerNode &&
+                !this.ownerNode.classList.contains("darkreader")
+            ) {
+                this.ownerNode.dispatchEvent(updateSheetEvent);
+            }
+        }
+        Object.defineProperty(
+            CSSStyleSheet.prototype,
+            "addRule",
+            Object.assign({}, addRuleDescriptor, {value: proxyAddRule})
+        );
+        Object.defineProperty(
+            CSSStyleSheet.prototype,
+            "insertRule",
+            Object.assign({}, insertRuleDescriptor, {value: proxyInsertRule})
+        );
+        Object.defineProperty(
+            CSSStyleSheet.prototype,
+            "deleteRule",
+            Object.assign({}, deleteRuleDescriptor, {value: proxyDeleteRule})
+        );
+        Object.defineProperty(
+            CSSStyleSheet.prototype,
+            "removeRule",
+            Object.assign({}, removeRuleDescriptor, {value: proxyRemoveRule})
+        );
+    })()</script><style class="darkreader darkreader--user-agent" media="screen">html {
+    background-color: #dcdad7 !important;
+}
+html, body, input, textarea, select, button {
+    background-color: #dcdad7;
+}
+html, body, input, textarea, select, button {
+    border-color: #4e5458;
+    color: #181a1b;
+}
+a {
+    color: #3d5bb6;
+}
+table {
+    border-color: #827c72;
+}
+::placeholder {
+    color: #a09a92;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #eff78a !important;
+    color: #181a1b !important;
+}
+::-webkit-scrollbar {
+    background-color: #d2d0cc;
+    color: #5c6468;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #a49f98;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #8e887e;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #5c6468;
+}
+::-webkit-scrollbar-corner {
+    background-color: #dcdad7;
+}
+::selection {
+    background-color: #3e6595 !important;
+    color: #dcdad7 !important;
+}
+::-moz-selection {
+    background-color: #3e6595 !important;
+    color: #dcdad7 !important;
+}</style>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <title>Editor — Sparks.land</title>
+
+  <link rel="stylesheet" href="./Editor — Sparks.land_files/reset.css"><style class="darkreader darkreader--sync" media="screen"></style>
+  <link rel="stylesheet" href="./Editor — Sparks.land_files/fonts.css"><style class="darkreader darkreader--sync" media="screen"></style>
+  <link rel="stylesheet" href="./Editor — Sparks.land_files/editor.css"><style class="darkreader darkreader--sync" media="screen"></style>
+  <link rel="stylesheet" href="./Editor — Sparks.land_files/baseEditor.css"><style class="darkreader darkreader--sync" media="screen"></style>
+  <link rel="stylesheet" href="./Editor — Sparks.land_files/modelEditor.css"><style class="darkreader darkreader--sync" media="screen"></style>
+  <link rel="stylesheet" href="./Editor — Sparks.land_files/animEditor.css"><style class="darkreader darkreader--sync" media="screen"></style>
+  <link rel="stylesheet" href="./Editor — Sparks.land_files/sceneEditor.css"><style class="darkreader darkreader--sync" media="screen"></style>
+<meta name="darkreader" content="13a99a2fd735879900263e072a19999c"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: #ffd76e !important;
+    border-color: #c59d00 !important;
+    color: #302505 !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+a[href="https://coinmarketcap.com/"] > svg[width="94"][height="16"] > path {
+    fill: var(--darkreader-neutral-text) !important;
+}</style></head>
+
+<body>
+  <div class="treeBrowser">
+    <div class="title">
+      <h1>🧙‍♂️ Editor — Sparks.land</h1>
+      <a href="http://sparks.localhost/" class="goHome">🌟</a>
+    </div>
+    <div class="toolbar">
+      <button class="newAsset" title="New asset">📝</button>
+      <button class="newFolder" title="New folder">📁</button>
+      <button class="rename" title="Rename" disabled="">✏️</button>
+      <button class="delete" title="Delete">🗑️</button>
+    </div>
+    <div class="tree scrollbar" tabindex="0"><div class="entry file" data-file-path="/bCube.model" draggable="true">bCube.model</div><div class="entry file" data-file-path="/bmodel.model" draggable="true">bmodel.model</div><div class="entry file" data-file-path="/bmodel2.model" draggable="true">bmodel2.model</div><div class="entry file" data-file-path="/Cube.model" draggable="true">Cube.model</div><div class="entry file focused selected" data-file-path="/scn2.scene" draggable="true">scn2.scene</div><div class="entry file" data-file-path="/TestModel.model" draggable="true">TestModel.model</div><div class="entry file" data-file-path="/TestScene.scene" draggable="true">TestScene.scene</div><div class="entry file" data-file-path="/TestScene.scene.bak" draggable="true">TestScene.scene.bak</div></div>
+  </div>
+
+  <div class="setup" hidden="">
+    <h1>Editor — Sparks.land</h1>
+
+    <div class="unsupported" hidden="">
+      Sorry, your browser doesn't support editing folders.<br>
+      Please try with Google Chrome or Microsoft Edge.
+    </div>
+
+    <div class="supported">
+      <div class="disclaimer">
+        <p>👷‍♂️ The model and scene editors are usable at this point. More features are planned, especially around 2D
+          vector
+          face details, gradients and topology editing tools. An animation editor is also in the works.</p>
+
+        <p>Sparks.land will be a giant minigames network. As an artist or developer,
+          you'll be able to make your own lobbies and games for people to hang out and play in.</p>
+
+        <p>Have fun and let us know what you think <a href="https://sparks.land/discord" target="_blank">on Discord</a>,
+          I'm <span style="user-select: all;">Elisée#8645</span> 🙏</p>
+
+        <p>— Elisée</p>
+      </div>
+
+      <div class="dndToEdit">Drag and drop a folder here to edit it</div>
+      <div><span class="pickFolder"><button class="styled">Pick folder...</button></span><span class="reopenLastUsedFolder" hidden=""> &nbsp;or&nbsp; <button class="styled">Reopen last folder</button></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="editorTabs miniscrollbar"><div class="tab active" data-file-path="/scn2.scene"><span class="name" title="/scn2.scene">scn2</span><button class="close"></button></div></div>
+    <div class="editors"><div class="sceneEditor">
+    <div class="canvasContainer">
+      <canvas tabindex="0" width="1452" height="1289" style="width: 1452px; height: 1289px;"></canvas>
+      <div class="ui">
+        <div class="overlay">
+          <div class="help">
+            <div class="line">
+              <div class="header">Global</div>
+              <div class="content">
+                <div><span class="key">H</span><span class="action">Help</span></div>
+                <div><span class="key">B</span><span class="action">Browser</span></div>
+                <div><span class="key">N</span><span class="action">Sidebar</span></div>
+                <div><span class="key">G</span><span class="action">Grid</span></div>
+                <div><span class="key">K</span><span class="action">Names</span></div>
+                <div><span class="key">Ctrl+S</span><span class="action">Save</span></div>
+                <div><span class="key">Ctrl+Z</span><span class="action">Undo</span></div>
+                <div><span class="key">Ctrl+Y</span><span class="action">Redo</span></div>
+              </div>
+            </div>
+            <div class="line">
+              <div class="header">Camera</div>
+              <div class="content">
+                <div><span class="key">MMB Drag</span><span class="action">Orbit</span></div>
+                <div><span class="key">Hold MMB + WASD</span><span class="action">Move</span></div>
+                <div><span class="key">RMB Drag</span><span class="action">Pan</span></div>
+                <div><span class="key">Numpad</span><span class="action">Align</span></div>
+                <div><span class="key">F</span><span class="action">Focus</span></div>
+              </div>
+            </div>
+            <div class="line">
+              <div class="header">Select</div>
+              <div class="content">
+                <div><span class="key">LMB Click/Drag</span><span class="action">Set</span></div>
+                <div><span class="key">Shift+LMB</span><span class="action">Union</span></div>
+                <div><span class="key">Ctrl+LMB</span><span class="action">Intersection</span></div>
+                <div><span class="key">Shift+Ctrl+LMB</span><span class="action">Difference</span></div>
+                <div><span class="key">S</span><span class="action">Ancestor</span></div>
+              </div>
+            </div>
+            <div class="line">
+              <div class="header">Edit</div>
+              <div class="content">
+                <div><span class="key">C</span><span class="action">Switch space</span></div>
+                <div><span class="key">Ctrl+D</span><span class="action">Duplicate</span></div>
+                <div><span class="key">X</span><span class="action">Delete</span></div>
+                <div><span class="key">P</span><span class="action">Reparent</span></div>
+                <div><span class="key">Hold Ctrl</span><span class="action">Precise transform</span></div>
+                <div><span class="key">Hold Shift</span><span class="action">Uniform scale</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="info">
+            <div>
+              <span class="transformSpace">Local</span><span> space —</span>
+              <span class="selection">no selection</span>
+            </div>
+            <div class="transform" hidden=""></div>
+          </div>
+
+          <div class="spacer"></div>
+
+          <div class="bottom">
+            <div>
+              <button data-action="addNode">Node</button>
+            </div>
+          </div>
+        </div>
+        <div class="notification" hidden=""></div>
+        <div class="rubberBand" hidden=""></div>
+        <div class="names"><div hidden="" style="left: 726px; top: 613px; z-index: -625;"><div class="name" data-node-index="0">root</div></div><div hidden="" style="left: 726px; top: 613px; z-index: -625;"><div class="name" data-node-index="1"></div></div></div>
+      </div>
+    </div>
+    <div class="sidebar miniscrollbar">
+      <div class="settings">
+        <button class="title">Settings</button>
+        <div class="backgroundColor">
+          <div class="label">Background</div>
+          <div class="field">
+            <div class="input"># <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></div>
+            <input type="color" class="styled">
+          </div>
+        </div>
+        <div class="translationStep">
+          <div class="label">Translation / Scale step</div>
+          <div class="field">
+            <input type="number" lang="en" step="0.01" class="styled">
+            <button class="small" data-step="0.1">0.1</button>
+            <button class="small" data-step="0.5">0.5</button>
+            <button class="small" data-step="1">1</button>
+          </div>
+        </div>
+        <div class="rotationStep">
+          <div class="label">Rotation step</div>
+          <div class="field">
+            <input type="number" lang="en" step="1" class="styled">
+            <button class="small" data-step="1">1</button>
+            <button class="small" data-step="5">5</button>
+            <button class="small" data-step="15">15</button>
+          </div>
+        </div>
+        <div class="lightSettings">
+          <div class="label">
+            Lighting Settings
+          </div>
+          <div class="ambientColor">
+            <div class="label">Ambient Color</div>
+            <div class="field">
+              <div class="input"># <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></div>
+              <input type="color" class="styled">
+            </div>
+          </div>
+          <div class="lightTabs editorTabs row">
+            
+          <div class="lightTab0 active">0</div><div class="lightTab1">1</div><div class="lightTab2">2</div><div class="lightTab3">3</div><div class="lightTab4">4</div><div class="lightTab5">5</div></div>
+          <div class="lightInspector">
+            
+          <div class="light0">
+              <div class="row">
+                <div class="lightEnabled">
+                  <div class="label">Enabled</div>
+                  <label class="toggleSwitch">
+                    <input type="checkbox" lang="en" class="styled">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+                <div class="ligthSpace">
+                  <div class="label">Lock to View</div>
+                  <label class="toggleSwitch">
+                    <input type="checkbox" lang="en" class="styled">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="lightColor">
+                <div class="label">Color</div>
+                <div class="field">
+                  <div class="input"># <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" value="ffffff"></div>
+                  <input type="color" class="styled" value="#ffffff">
+                </div>
+              </div>
+              <div class="lightIntensity">
+                <div class="label">Intensity</div>
+                <div class="field">
+                  <input type="number" value="1" lang="en" class="styled">
+                </div>
+              </div>
+              <div class="lightAzimut">
+                <div class="label">Azimut</div>
+                <div class="row">
+                  <div>-180°<br>X</div>
+                  <div>-90°<br>Z</div>
+                  <div>0°<br>-X</div>
+                  <div>90°<br>-Z</div>
+                  <div>180°<br>X</div>
+                </div>
+                <div class="field">
+                  <input type="range" min="-180" max="180" lang="en" class="styled">
+                </div>
+              </div>
+              <div class="lightElevation">
+                <div class="label">Elevation</div>
+                <div class="row">
+                  <div>-90°</div>
+                  <div>0°</div>
+                  <div>90°</div>
+                </div>
+                <div class="field">
+                  <input type="range" min="-90" max="90" lang="en" class="styled">
+                </div>
+              </div>
+              <div class="lightGradient">
+                <div class="label">Light Gradient</div>
+                <div class="field">
+                  <input class="upperRange" type="range" min="-1.0" max="1.0" value="1.0" step="any" lang="en">
+                  <input class="lowerRange" type="range" min="-1.0" max="1.0" value="0.0" step="any" lang="en">
+                </div>
+              </div>
+            </div><div class="light1" style="display: none;">
+              <div class="row">
+                <div class="lightEnabled">
+                  <div class="label">Enabled</div>
+                  <label class="toggleSwitch">
+                    <input type="checkbox" lang="en" class="styled">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+                <div class="ligthSpace">
+                  <div class="label">Lock to View</div>
+                  <label class="toggleSwitch">
+                    <input type="checkbox" lang="en" class="styled">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="lightColor">
+                <div class="label">Color</div>
+                <div class="field">
+                  <div class="input"># <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" value="ffffff"></div>
+                  <input type="color" class="styled" value="#ffffff">
+                </div>
+              </div>
+              <div class="lightIntensity">
+                <div class="label">Intensity</div>
+                <div class="field">
+                  <input type="number" value="1" lang="en" class="styled">
+                </div>
+              </div>
+              <div class="lightAzimut">
+                <div class="label">Azimut</div>
+                <div class="row">
+                  <div>-180°<br>X</div>
+                  <div>-90°<br>Z</div>
+                  <div>0°<br>-X</div>
+                  <div>90°<br>-Z</div>
+                  <div>180°<br>X</div>
+                </div>
+                <div class="field">
+                  <input type="range" min="-180" max="180" lang="en" class="styled">
+                </div>
+              </div>
+              <div class="lightElevation">
+                <div class="label">Elevation</div>
+                <div class="row">
+                  <div>-90°</div>
+                  <div>0°</div>
+                  <div>90°</div>
+                </div>
+                <div class="field">
+                  <input type="range" min="-90" max="90" lang="en" class="styled">
+                </div>
+              </div>
+              <div class="lightGradient">
+                <div class="label">Light Gradient</div>
+                <div class="field">
+                  <input class="upperRange" type="range" min="-1.0" max="1.0" value="1.0" step="any" lang="en">
+                  <input class="lowerRange" type="range" min="-1.0" max="1.0" value="0.0" step="any" lang="en">
+                </div>
+              </div>
+            </div><div class="light2" style="display: none;">
+              <div class="row">
+                <div class="lightEnabled">
+                  <div class="label">Enabled</div>
+                  <label class="toggleSwitch">
+                    <input type="checkbox" lang="en" class="styled">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+                <div class="ligthSpace">
+                  <div class="label">Lock to View</div>
+                  <label class="toggleSwitch">
+                    <input type="checkbox" lang="en" class="styled">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="lightColor">
+                <div class="label">Color</div>
+                <div class="field">
+                  <div class="input"># <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" value="ffffff"></div>
+                  <input type="color" class="styled" value="#ffffff">
+                </div>
+              </div>
+              <div class="lightIntensity">
+                <div class="label">Intensity</div>
+                <div class="field">
+                  <input type="number" value="1" lang="en" class="styled">
+                </div>
+              </div>
+              <div class="lightAzimut">
+                <div class="label">Azimut</div>
+                <div class="row">
+                  <div>-180°<br>X</div>
+                  <div>-90°<br>Z</div>
+                  <div>0°<br>-X</div>
+                  <div>90°<br>-Z</div>
+                  <div>180°<br>X</div>
+                </div>
+                <div class="field">
+                  <input type="range" min="-180" max="180" lang="en" class="styled">
+                </div>
+              </div>
+              <div class="lightElevation">
+                <div class="label">Elevation</div>
+                <div class="row">
+                  <div>-90°</div>
+                  <div>0°</div>
+                  <div>90°</div>
+                </div>
+                <div class="field">
+                  <input type="range" min="-90" max="90" lang="en" class="styled">
+                </div>
+              </div>
+              <div class="lightGradient">
+                <div class="label">Light Gradient</div>
+                <div class="field">
+                  <input class="upperRange" type="range" min="-1.0" max="1.0" value="1.0" step="any" lang="en">
+                  <input class="lowerRange" type="range" min="-1.0" max="1.0" value="0.0" step="any" lang="en">
+                </div>
+              </div>
+            </div><div class="light3" style="display: none;">
+              <div class="row">
+                <div class="lightEnabled">
+                  <div class="label">Enabled</div>
+                  <label class="toggleSwitch">
+                    <input type="checkbox" lang="en" class="styled">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+                <div class="ligthSpace">
+                  <div class="label">Lock to View</div>
+                  <label class="toggleSwitch">
+                    <input type="checkbox" lang="en" class="styled">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="lightColor">
+                <div class="label">Color</div>
+                <div class="field">
+                  <div class="input"># <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" value="ffffff"></div>
+                  <input type="color" class="styled" value="#ffffff">
+                </div>
+              </div>
+              <div class="lightIntensity">
+                <div class="label">Intensity</div>
+                <div class="field">
+                  <input type="number" value="1" lang="en" class="styled">
+                </div>
+              </div>
+              <div class="lightAzimut">
+                <div class="label">Azimut</div>
+                <div class="row">
+                  <div>-180°<br>X</div>
+                  <div>-90°<br>Z</div>
+                  <div>0°<br>-X</div>
+                  <div>90°<br>-Z</div>
+                  <div>180°<br>X</div>
+                </div>
+                <div class="field">
+                  <input type="range" min="-180" max="180" lang="en" class="styled">
+                </div>
+              </div>
+              <div class="lightElevation">
+                <div class="label">Elevation</div>
+                <div class="row">
+                  <div>-90°</div>
+                  <div>0°</div>
+                  <div>90°</div>
+                </div>
+                <div class="field">
+                  <input type="range" min="-90" max="90" lang="en" class="styled">
+                </div>
+              </div>
+              <div class="lightGradient">
+                <div class="label">Light Gradient</div>
+                <div class="field">
+                  <input class="upperRange" type="range" min="-1.0" max="1.0" value="1.0" step="any" lang="en">
+                  <input class="lowerRange" type="range" min="-1.0" max="1.0" value="0.0" step="any" lang="en">
+                </div>
+              </div>
+            </div><div class="light4" style="display: none;">
+              <div class="row">
+                <div class="lightEnabled">
+                  <div class="label">Enabled</div>
+                  <label class="toggleSwitch">
+                    <input type="checkbox" lang="en" class="styled">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+                <div class="ligthSpace">
+                  <div class="label">Lock to View</div>
+                  <label class="toggleSwitch">
+                    <input type="checkbox" lang="en" class="styled">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="lightColor">
+                <div class="label">Color</div>
+                <div class="field">
+                  <div class="input"># <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" value="ffffff"></div>
+                  <input type="color" class="styled" value="#ffffff">
+                </div>
+              </div>
+              <div class="lightIntensity">
+                <div class="label">Intensity</div>
+                <div class="field">
+                  <input type="number" value="1" lang="en" class="styled">
+                </div>
+              </div>
+              <div class="lightAzimut">
+                <div class="label">Azimut</div>
+                <div class="row">
+                  <div>-180°<br>X</div>
+                  <div>-90°<br>Z</div>
+                  <div>0°<br>-X</div>
+                  <div>90°<br>-Z</div>
+                  <div>180°<br>X</div>
+                </div>
+                <div class="field">
+                  <input type="range" min="-180" max="180" lang="en" class="styled">
+                </div>
+              </div>
+              <div class="lightElevation">
+                <div class="label">Elevation</div>
+                <div class="row">
+                  <div>-90°</div>
+                  <div>0°</div>
+                  <div>90°</div>
+                </div>
+                <div class="field">
+                  <input type="range" min="-90" max="90" lang="en" class="styled">
+                </div>
+              </div>
+              <div class="lightGradient">
+                <div class="label">Light Gradient</div>
+                <div class="field">
+                  <input class="upperRange" type="range" min="-1.0" max="1.0" value="1.0" step="any" lang="en">
+                  <input class="lowerRange" type="range" min="-1.0" max="1.0" value="0.0" step="any" lang="en">
+                </div>
+              </div>
+            </div><div class="light5" style="display: none;">
+              <div class="row">
+                <div class="lightEnabled">
+                  <div class="label">Enabled</div>
+                  <label class="toggleSwitch">
+                    <input type="checkbox" lang="en" class="styled">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+                <div class="ligthSpace">
+                  <div class="label">Lock to View</div>
+                  <label class="toggleSwitch">
+                    <input type="checkbox" lang="en" class="styled">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="lightColor">
+                <div class="label">Color</div>
+                <div class="field">
+                  <div class="input"># <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" value="ffffff"></div>
+                  <input type="color" class="styled" value="#ffffff">
+                </div>
+              </div>
+              <div class="lightIntensity">
+                <div class="label">Intensity</div>
+                <div class="field">
+                  <input type="number" value="1" lang="en" class="styled">
+                </div>
+              </div>
+              <div class="lightAzimut">
+                <div class="label">Azimut</div>
+                <div class="row">
+                  <div>-180°<br>X</div>
+                  <div>-90°<br>Z</div>
+                  <div>0°<br>-X</div>
+                  <div>90°<br>-Z</div>
+                  <div>180°<br>X</div>
+                </div>
+                <div class="field">
+                  <input type="range" min="-180" max="180" lang="en" class="styled">
+                </div>
+              </div>
+              <div class="lightElevation">
+                <div class="label">Elevation</div>
+                <div class="row">
+                  <div>-90°</div>
+                  <div>0°</div>
+                  <div>90°</div>
+                </div>
+                <div class="field">
+                  <input type="range" min="-90" max="90" lang="en" class="styled">
+                </div>
+              </div>
+              <div class="lightGradient">
+                <div class="label">Light Gradient</div>
+                <div class="field">
+                  <input class="upperRange" type="range" min="-1.0" max="1.0" value="1.0" step="any" lang="en">
+                  <input class="lowerRange" type="range" min="-1.0" max="1.0" value="0.0" step="any" lang="en">
+                </div>
+              </div>
+            </div></div>
+        </div>
+      </div>
+      <div class="nodesTreeView">
+        <button class="title">Nodes</button>
+        <div class="tree scrollbar" tabindex="0"><div class="entry open alternative" data-node-index="1">TestModel.model</div><div class="children"></div></div>
+      </div>
+      <div class="selection">
+        <button class="title">Selection</button>
+        <div class="name" hidden="">
+          <div class="label">Name</div>
+          <div class="field">
+            <input type="text" class="styled" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+          </div>
+        </div>
+        <div class="position" hidden="">
+          <div class="label">Position</div>
+          <div class="field">
+            <input type="number" lang="en" step="0.5" class="styled">
+            <input type="number" lang="en" step="0.5" class="styled">
+            <input type="number" lang="en" step="0.5" class="styled">
+          </div>
+        </div>
+        <div class="rotation" hidden="">
+          <div class="label">Rotation</div>
+          <div class="field">
+            <input type="number" lang="en" step="5" class="styled">
+            <input type="number" lang="en" step="5" class="styled">
+            <input type="number" lang="en" step="5" class="styled">
+          </div>
+        </div>
+        <div class="modelPath" hidden="">
+          <div class="label">Model Path</div>
+          <div class="field">
+            <input type="text" class="styled" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <button title="Open">🔧</button>
+          </div>
+        </div>
+        <div class="animPath" hidden="">
+          <div class="label">Anim Path</div>
+          <div class="field">
+            <input type="text" class="styled" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <button title="Open">🔧</button>
+          </div>
+        </div>
+        <div class="scale" hidden="">
+          <div class="label">Scale</div>
+          <div class="field">
+            <input type="number" step="1" class="styled">
+            <input type="number" step="1" class="styled">
+            <input type="number" step="1" class="styled">
+          </div>
+        </div>
+        <div class="type" hidden="">
+          <div class="label">Type</div>
+          <div class="field">
+            <input type="text" class="styled" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="loading" hidden=""><div class="details"></div></div></div></div>
+  </div>
+
+  <form class="newAsset popup" hidden="">
+    <div class="frame">
+      <div class="header">
+        <div class="title">📝 New asset</div>
+        <button type="button" class="close">❌</button>
+      </div>
+      <div class="content">
+        <div class="name">
+          <div class="label">Name</div>
+          <div class="field"><input type="text" class="styled" minlength="1" maxlength="100" pattern="[A-Za-z0-9_]{1,100}" title="A-Z, a-z, 0-9 or _" placeholder="myNewAsset" required=""></div>
+        </div>
+        <div class="type">
+          <div class="label">Type</div>
+          <div class="field">
+            <select class="styled scrollbar" size="3" required="">
+              <option value="model" selected="">🧶 Model</option>
+              <option value="anim">💨 Animation</option>
+              <option value="scene">🎬 Scene</option>
+            </select>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="create styled">Create</button>
+        </div>
+      </div>
+  
+
+  <template id="modelTemplate"></template>
+
+  <template id="animTemplate"></template>
+
+  <template id="sceneTemplate"></template>
+
+  <script src="./Editor — Sparks.land_files/editor.ts" type="module"></script>
+
+
+</div></form></body></html>

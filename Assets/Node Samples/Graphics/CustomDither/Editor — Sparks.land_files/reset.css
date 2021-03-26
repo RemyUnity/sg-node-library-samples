@@ -1,0 +1,47 @@
+* {
+  user-select: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  text-decoration: none;
+  color: inherit;
+  min-width: 0;
+  flex-shrink: 0;
+}
+*[hidden] { display: none !important; }
+
+body {
+  word-wrap: break-word; /* Protect against extra-long words */
+  overscroll-behavior: contain; /* Prevent accidental pull-to-refresh */
+}
+
+canvas {
+  touch-action: none;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+.scrollbar { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.1) rgba(0,0,0,0.05); }
+.scrollbar::-webkit-scrollbar { width: 1rem; height: 1rem; }
+.scrollbar::-webkit-scrollbar-track { background-color: rgba(0,0,0,0.05); }
+.scrollbar::-webkit-scrollbar-thumb { background-color: rgba(255,255,255,0.1); border: 3px solid transparent; background-clip: content-box; }
+.scrollbar::-webkit-scrollbar-thumb:hover { background-color: rgba(255,255,255,0.15); }
+.scrollbar::-webkit-scrollbar-corner { background-color: rgba(255,255,255,0.1); }
+
+.miniscrollbar { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.1) rgba(0,0,0,0.05); }
+.miniscrollbar::-webkit-scrollbar { width: 0.3rem; height: 0.3rem; }
+.miniscrollbar::-webkit-scrollbar-track { background-color: rgba(0,0,0,0.2); }
+.miniscrollbar::-webkit-scrollbar-thumb { background-color: rgba(255,255,255,0.2); border: 3px solid transparent; }
+.miniscrollbar::-webkit-scrollbar-thumb:hover { background-color: rgba(255,255,255,0.4); }
+.miniscrollbar::-webkit-scrollbar-corner { background-color: rgba(255,255,255,0.1); }

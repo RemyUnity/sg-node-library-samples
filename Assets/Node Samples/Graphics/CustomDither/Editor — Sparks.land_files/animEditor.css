@@ -1,0 +1,128 @@
+.animEditor {
+  display: flex;
+}
+
+.animEditor .outerSplitter {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+}
+
+.animEditor .innerSplitter {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.animEditor .canvasContainer {
+  flex: 1;
+}
+
+.animEditor .ui {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  color: #eee;
+  display: flex;
+  flex-flow: column;
+}
+
+
+.animEditor .ui .rubberBand, .animEditor .timeline .rubberBand {
+  position: absolute;
+  border: 1px solid #ccc;
+  background: #44444444;
+}
+
+
+.animEditor .ui .pivots {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  color: #fff;
+}
+
+.animEditor .ui .pivots:not(.noninteractive) > div {
+  pointer-events: all;
+}
+
+.animEditor .ui .pivots > div {
+  position: absolute;
+  border: 1px solid #444;
+  background: rgb(40 45 52 / 80%);
+  background-clip: padding-box;
+  text-align: center;
+  border-radius: 0.25rem;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.animEditor .ui .pivots > div:hover {
+  background: #222;
+  z-index: 1000 !important;
+}
+
+.animEditor .ui .pivots > div:active {
+  background: #111;
+  border: 1px solid #fff;
+}
+
+.animEditor .ui .pivots .name {
+  font-size: smaller;
+  padding: 0.25rem;
+}
+
+
+.animEditor .timeline {
+  height: 300px;
+  background: #141618;
+  color: #eee;
+  display: flex;
+  justify-content: stretch;
+  border-top: 2px solid rgba(0 0 0 / 50%);
+}
+
+.animEditor .timeline .left {
+  background: #1d2024;
+  width: 300px;
+  display: flex;
+  flex-flow: column;
+}
+
+.animEditor .timeline .left .duration {
+  padding: 0.5rem;
+  background: #282d34;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.animEditor .timeline .left .duration input {
+  flex: 1;
+}
+
+.animEditor .timeline .left .trackHeaders {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.animEditor .timeline .left .trackHeaders > div {
+  padding: 0.5rem;
+}
+
+.animEditor .timeline .left .trackHeaders > div.selected {
+  background: rgba(255 255 255 / 10%);
+}
+
+.animEditor .timeline .tracks {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  position: relative;
+}
+
+.animEditor .timeline .tracks canvas {
+  flex: 1;
+}

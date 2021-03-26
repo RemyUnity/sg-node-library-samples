@@ -1,0 +1,112 @@
+.sceneEditor {
+  display: flex;
+}
+
+.sceneEditor .ui .overlay .spacer {
+  flex: 1;
+}
+
+.sceneEditor .overlay .bottom {
+  align-self: center;
+  pointer-events: initial;
+  display: flex;
+  gap: 0.5rem;
+  background: rgba(0,0,0,0.3);
+  border-radius: 0.75rem;
+}
+
+.sceneEditor .overlay .bottom > div {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.sceneEditor .overlay .bottom button {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #444;
+  background: rgb(40 45 52 / 60%);
+}
+
+.sceneEditor .overlay .bottom button:hover {
+  background: rgb(40 45 52 / 100%);
+}
+
+.sceneEditor .ui .rubberBand {
+  position: absolute;
+  border: 1px solid #ccc;
+  background: #44444444;
+}
+
+.sceneEditor .ui .names {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  color: #fff;
+}
+
+.sceneEditor .ui .names:not(.noninteractive) > div {
+  pointer-events: all;
+}
+
+.sceneEditor .ui .names > div {
+  position: absolute;
+  border: 1px solid #444;
+  background: rgb(40 45 52 / 80%);
+  background-clip: padding-box;
+  text-align: center;
+  border-radius: 0.5rem;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.sceneEditor .ui .names > div:hover {
+  background: #222;
+  z-index: 1000 !important;
+}
+
+.sceneEditor .ui .names > div:active {
+  background: #111;
+  border: 1px solid #fff;
+}
+
+.sceneEditor .ui .names .name {
+  font-size: smaller;
+  padding: 0.5rem;
+}
+
+.nodesTreeView .tree {
+  height: 300px;
+  color: #eee;
+  overflow-y: auto;
+  outline: none;
+}
+
+.nodesTreeView .tree .children {
+  margin-left: 1rem;
+  border-left: 1px solid rgba(255,255,255,0.2);
+}
+
+.nodesTreeView .tree .entry {
+  cursor: pointer;
+  padding: 0.25rem;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.nodesTreeView .tree .entry.alternative {
+  color: #777;
+}
+
+.nodesTreeView .entry:hover { background: rgba(255,255,255,0.1); }
+.nodesTreeView .entry.selected { background: rgba(255,255,255,0.2); }
+.nodesTreeView .tree:focus .entry.focused { border: 1px solid rgba(255,255,255,0.2); }
+
+.nodesTreeView .entry:before { content: "📁"; }
+.nodesTreeView .entry.open:before { content: "📂"; }
+
+.sceneEditor .sidebar .selection button {
+  flex: 0.1;
+}

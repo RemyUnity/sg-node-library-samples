@@ -1,0 +1,107 @@
+.modelEditor {
+  display: flex;
+}
+
+.modelEditor .overlay .spacer {
+  flex: 1;
+}
+
+.modelEditor .overlay .bottom {
+  align-self: center;
+  pointer-events: initial;
+  display: flex;
+  gap: 0.5rem;
+  background: rgba(0,0,0,0.3);
+  border-radius: 0.75rem;
+}
+
+.modelEditor .overlay .bottom > div {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.modelEditor .overlay .bottom button {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #444;
+  background: rgb(40 45 52 / 60%);
+}
+
+.modelEditor .overlay .bottom button:hover {
+  background: rgb(40 45 52 / 100%);
+}
+
+
+.modelEditor .ui .rubberBand {
+  position: absolute;
+  border: 1px solid #ccc;
+  background: #44444444;
+}
+
+
+.modelEditor .ui .pivots {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  color: #fff;
+}
+
+.modelEditor .ui .pivots:not(.noninteractive) > div {
+  pointer-events: all;
+}
+
+.modelEditor .ui .pivots > div {
+  position: absolute;
+  border: 1px solid #444;
+  background: rgb(40 45 52 / 80%);
+  background-clip: padding-box;
+  text-align: center;
+  border-radius: 0.25rem;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.modelEditor .ui .pivots > div:hover {
+  background: #222;
+  z-index: 1000 !important;
+}
+
+.modelEditor .ui .pivots > div:active {
+  background: #111;
+  border: 1px solid #fff;
+}
+
+.modelEditor .ui .pivots .name {
+  font-size: smaller;
+  padding: 0.25rem;
+}
+
+.modelEditor .ui .pivots .name:empty:before {
+  content: "Pivot";
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.modelEditor .sidebar .color .palette {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  gap: 0.5rem;
+}
+
+.modelEditor .sidebar .color .palette > div {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid rgba(255 255 255 / 20%);
+  cursor: pointer;
+}
+
+.modelEditor .sidebar .color .palette > div:after { content: ""; position: absolute; inset: 0; border: 1px solid rgba(0 0 0 / 20%); }
+
+.modelEditor .sidebar .color .palette > div:hover { border: 1px solid rgba(255 255 255 / 60%); }
+.modelEditor .sidebar .color .palette > div:hover:after { border: 1px solid rgba(0 0 0 / 60%); }
+
+.modelEditor .sidebar .color .palette > div:active { border: 1px solid rgba(255 255 255 / 100%); }
+.modelEditor .sidebar .color .palette > div:active:after { border: 1px solid rgba(0 0 0 / 100%); }

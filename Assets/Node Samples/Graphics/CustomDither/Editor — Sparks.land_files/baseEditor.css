@@ -1,0 +1,168 @@
+.editors .canvasContainer {
+  position: relative;
+  flex: 1;
+}
+
+.editors .canvasContainer canvas {
+  outline: none;
+}
+
+.editors .canvasContainer .ui {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  color: #eee;
+  display: flex;
+  overflow: hidden;
+}
+
+.editors .canvasContainer .ui .overlay {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+.editors .canvasContainer .ui .help {
+  pointer-events: none;
+  margin-bottom: -0.5rem;
+}
+
+.editors .canvasContainer .ui .help .line {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #444;
+  background: rgb(40 45 52 / 80%);
+  background-clip: padding-box;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.editors .canvasContainer .ui .help .line .header {
+  margin: 0.5rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.editors .canvasContainer .ui .help .line .content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0.25rem;
+  margin-left: 0;
+  color: #888;
+}
+
+.editors .canvasContainer .ui .help .content > div {
+  padding: 0.125rem 0.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.editors .canvasContainer .ui .help .content .key {
+  font-weight: bold;
+  background: #888;
+  color: #000;
+  padding: 0 0.25rem;
+  border-radius: 0.25rem;
+  font-size: smaller;
+}
+
+.editors .canvasContainer .ui .help .content .action {
+  margin-left: 0.25rem;
+}
+
+
+.editors .canvasContainer .ui .info {
+  opacity: 0.5;
+  gap: 0.5rem;
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+}
+
+.editors .canvasContainer .ui .info > div {
+  background: rgba(0 0 0 / 80%);
+  padding: 0.5rem;
+}
+
+.editors .ui .notification {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  background: rgba(0 0 0 / 80%);
+  padding: 0.5rem;
+  opacity: 0.5;
+}
+
+
+.editors .sidebar {
+  width: 300px;
+  background: #1d2024;
+  color: #fff;
+  overflow-y: scroll;
+  border-left: 2px solid rgba(0 0 0 / 50%);
+}
+
+.editors .sidebar > div {
+  background: #272b31;
+  box-shadow: 0 0 0.2rem rgb(0 0 0 / 40%);}
+
+
+.editors .sidebar button.title {
+  display: block;
+  width: 100%;
+  background: rgba(0 0 0 / 40%);
+  text-transform: uppercase;
+  padding: 0.5rem;
+  color: #aaa;
+  position: relative;
+}
+
+.editors .sidebar > div button.title:before {
+  position: absolute;
+  content: "−";
+  left: 0;
+  padding: 0 0.5rem;
+}
+
+.editors .sidebar > div.collapsed button.title:before {
+  content: "+";
+}
+
+.editors .sidebar > div.collapsed > div {
+  display: none;
+}
+
+.editors .sidebar .label {
+  color: #eee;
+  background: rgba(255 255 255 / 5%);
+  padding: 0.5rem;
+}
+
+.editors .sidebar .field {
+  display: flex;
+  align-items: stretch;
+  gap: 0.25rem;
+}
+
+.editors .sidebar .field input, .editors .sidebar .field button {
+  flex: 1;
+}
+
+.editors .sidebar .field button {
+  padding: 0.25rem;
+}
+
+.editors .sidebar .field button:disabled {
+  filter: grayscale(100%);
+  opacity: 0.2;
+  cursor: default;
+}
+
+.editors .sidebar .field button.small {
+  flex: unset;
+  width: 2.5rem;
+}
